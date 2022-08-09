@@ -1,0 +1,15 @@
+Variables:
+Son contenedores de informacion, la informacion es variable y de distintos tipos.
+
+Strings: Son variables que contienen informacion de tipo cadena(Texto)
+
+Funciones (argumentos, `return`) :
+Una Function es un proceso al cual le
+introducimos datos por medio de argumentos
+y este nos devuelve un resultado por medio de Return.
+
+Declaraciones `if` :
+Nos permiten tomar desiciones de "Si esto" o "Si aquello" dentro del programa
+
+Valores booleanos (`true`, `false`) :
+Los podemos imaginar como switches de verdadero = 1 y falso = 0 , de esta forma los podemos utilizar como activadores o desactivadores o como indicadores de que algo ocurrio(1) o no a courrido(0)
