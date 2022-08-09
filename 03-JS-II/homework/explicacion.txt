@@ -1,0 +1,10 @@
+For: se utiliza para generar un ciclo "Para"
+para cierta comparacion realizar tal o cual accion.
+
+&& : comparacion AND compara A && B (devuelve true si las 2 son verdaderas)
+
+|| : comparacion OR compara A || B ( devuelve true si 1 es verdadera)
+
+!= : comparacion "No igual" A != B (devuelve true si no son iguales)  
+
+! : comparacion "NO" devuelve el valor voleando opuesto al qu ese le pasa
