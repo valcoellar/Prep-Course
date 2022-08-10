@@ -1,0 +1,10 @@
+ Arrays : las podemos considerar como una coleccion de variables (pueden contener datos mixtos separados por comas), se accede a los datos por medio del indice(lugar) en donde se encuentran
+
+
+
+ Ej. nombres["uno","dos",23]
+
+nombres[2]  devuelve dos
+nombres[1]  devuelve uno
+nombres[3]  devuelve 23
+
