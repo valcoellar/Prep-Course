@@ -1,0 +1,11 @@
+* Objetos : Es una coleccion de datos en pares (Clave:Valor) , similar a los arrays, pero las claves son las propiedades con sus respectivos valores.
+
+
+* Propiedades : Son los contenedores de los valores de un objeto
+
+* Métodos : es una funcion contenida en un objeto
+
+* Bucle `for…in` : Se utiliza para recorrer todos los elementos de un objeto y asi poder acceder a los valores
+
+* Notación de puntos vs notación de corchetes : la notacion de puntos (Objeto.propiedad ) y la notacion de corchetes Objeto["Propiedad"] los corchetes se utilizan mas con variables.
+
