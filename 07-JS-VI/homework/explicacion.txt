@@ -1,0 +1,39 @@
+* Funciones Callback : son funciones que se pasan como parametro de otra funcion Ej. :
+
+
+// se crea la funcion decirHolaAlUsuario 
+function decirHolaAlUsuario(usuario) {
+  return "Hola " + usuario + "!";
+}
+
+// se crea la funcion decirAdiosAlUsuario 
+function decirAdiosAlUsuario(usuario) {
+  return "Adiós " + usuario + "!";
+}
+
+
+// se crea la funcion crearSaludo
+function crearSaludo(usuario, cb) {
+  return cb(usuario);
+}
+
+se llama crearSaludo con parametros "dan" y funcion decirHolaAlUsuario
+
+crearSaludo("Dan", decirHolaAlUsuario); // 'Hola Dan!'
+crearSaludo("Dan", decirAdiosAlUsuario); // 'Hola Dan!'
+
+
+
+-----------------------metodos string----------------------
+console.log(Fprueba(["hola","dos","tres","full"]));
+
+
+function Fprueba(data){
+    data.forEach(function (elemento,indice) {
+    console.log(indice);    
+        
+    });
+    
+}
+-----------------------metodos string----------------------
+
