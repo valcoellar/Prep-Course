@@ -1,0 +1,40 @@
+*`prototype` : 
+
+Cuando una funcion es creada en JS, JS agrega una propiedad a esa funcion
+(prototypes). Esta propiedad es un objeto que contiene un constructor por default.
+
+se puede acceder   NomFuncion.prototype
+
+como es un objeto podemos agregarle mas propiedades y metodos Ej.
+
+				   NomFuncion.prototype.nuevo_metodo = function(metodo) {}
+
+				   o
+
+				   NomFuncion.protptype.nueva_propiedad = "dato"
+
+
+
+* _Constructors_ (de Clases) :
+
+es una funcion diseñada para crear objetos a partir de una base
+son invocados usando new
+
+es decir primer creamos la plantilla de el objeto
+y luego podemos crear un nuevo objeto con otro nombre pero heredando
+las mismas caracteristicas EJ.
+
+Plantilla---
+
+var Persona = function(nombre,edad) {
+	this.nombre = nombre;
+	this.edad = edad;
+};
+
+
+Nuevo Objeto con base a la plantilla anterior ----
+
+var OtraPersona = new Persona("juancho",31);
+
+
+
