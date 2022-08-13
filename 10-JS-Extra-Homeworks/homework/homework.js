@@ -10,15 +10,46 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+
+var Matriz = Object.keys(objeto).map(function (key) {return [(key), objeto[key]];});
+return Matriz;
+
 }
 
 
 function numberOfCharacters(string) {
-  //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
+  //La función recibe un string. Recorre el srting y devuelve el caracter 
+  //con el número de veces que aparece 
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
+// metodo 1 para encontrar ocurrencias
+//var count = (string.match(/d/g) || []).length;
+let NewObject ={};
+
+for (var i = 0; i < 9; i++) {
+   NewObject[i] = (string.charAt(i))  +": "+ find_occurences(string,string.charAt(i)) ;
+  }
+
+let Resultado = NewObject;
+
+   return Object.values(Resultado); 
+
+
+//count = find_occurences(string,"w");
+
+function find_occurences(str, char_to_count){
+    return str.split(char_to_count).length - 1;
 }
+
+//return count;
+
+}
+
+
+
+
 
 
 function capToFront(s) {
@@ -26,15 +57,47 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+let minusculas ="";
+let mayusculas ="";
+
+for (let i = 0; i < s.length; i++){
+    let letra = s.charAt(i);
+    if (letra == letra.toUpperCase()){mayusculas = mayusculas + letra}
+    else {minusculas = minusculas + letra}
+   
+}
+return (mayusculas + minusculas); 
+
+
+
 }
 
 
 function asAmirror(str) {
   //La función recibe una frase. 
-  //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
+  //Escribe una función que tome la frase recibida y la devuelva de modo 
+  //tal que se pueda leer de izquierda a derecha 
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+let NewSentence =""
+let ReversedWord ="";
+let SplittedWord= "";
+let CompleteWord="";
+let SplittedString =str.split(" ");
+
+
+for (let i =0; i< SplittedString.length; i++){
+   SplittedWord = SplittedString[i].split("");
+   ReversedWord = SplittedWord.reverse();
+   CompleteWord = ReversedWord.join("");
+    
+    NewSentence = (NewSentence + CompleteWord +" ");
+ 
+}
+
+
+return NewSentence.trim();
 } 
 
 
@@ -43,6 +106,14 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+var Cadena = numero.toString();
+var SplitString = Cadena.split("")
+var ReversedStr = SplitString.reverse();
+var JoinStr = ReversedStr.join("");
+
+if (JoinStr == Cadena){return "Es capicua"} else {return "No es capicua"};
+
+  
 }
 
 
